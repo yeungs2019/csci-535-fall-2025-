@@ -13,7 +13,7 @@ int main() {
 	struct sockaddr_in ServerAddr;
 	int addrlen = sizeof(ServerAddr);
 
-	if(server_fd = socket(AF_INET, SOCK_STREAM, 0) == 0){
+	if((server_fd = socket(AF_INET, SOCK_STREAM, 0)) == 0){
 		cout << "Socket creation error!" << endl;
 		exit(EXIT_FAILURE);
 	}
@@ -35,7 +35,7 @@ int main() {
 		cout << "Listen failure!" << endl;
 		exit(EXIT_FAILURE);
 	}
-	if(new_socket = accept(server_fd, (struct sockaddr *)&ServerAddr, (socklen_t *)&addrlen) < 0){
+	if((new_socket = accept(server_fd, (struct sockaddr *)&ServerAddr, (socklen_t *)&addrlen)) < 0){
 		cout << "Accept Failed!" << endl;
 		exit(EXIT_FAILURE);
 	}
