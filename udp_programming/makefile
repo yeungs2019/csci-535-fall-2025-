@@ -1,6 +1,12 @@
-hello:
+udp_server:
 	clear
-	g++ hello.cpp -o hello.exe
-	./hello.exe
+	g++ udp_server.cpp -o udp_server.exe
+	./udp_server.exe
+
+udp_client:
+	clear
+	g++ udp_client.cpp -o udp_client.exe
+	./udp_client.exe
+
 clean:
 	rm -f *.exe
