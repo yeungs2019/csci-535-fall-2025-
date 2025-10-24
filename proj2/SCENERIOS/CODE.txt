@@ -1,0 +1,6 @@
+Run each scenario to generate plots:
+
+Scenario A: python3 experiment.py --loss 0.0 --rtt 50 --window 4 --bytes 50000 
+Scenario B: python3 experiment.py --loss 0.1 --rtt 100 --window 8 --bytes 50000 
+Scenario C: python3 experiment.py --loss 0.2 --rtt 300 --window 4 --bytes 50000 
+Scenario D: python3 experiment.py --loss 0.05 --rtt 500 --window 16 --bytes 50000 
